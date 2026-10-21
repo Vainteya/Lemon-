@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Little Lemon">
+  <ellipse cx="32" cy="34" rx="22" ry="18" fill="#F4CE14"/>
+  <ellipse cx="32" cy="34" rx="22" ry="18" fill="none" stroke="#495E57" stroke-width="3"/>
+  <path d="M32 16 C30 10 34 6 40 6 C40 12 36 16 32 16 Z" fill="#495E57"/>
+  <circle cx="25" cy="30" r="2.5" fill="#ffffff" opacity="0.8"/>
+</svg>

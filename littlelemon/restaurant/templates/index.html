@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <link rel="icon" href="{% static 'img/logo.svg' %}" type="image/svg+xml">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="{% url 'home' %}" class="brand">
+                <img src="{% static 'img/logo.svg' %}" alt="Little Lemon logo" width="40" height="40">
+                <span>Little Lemon</span>
+            </a>
+            <nav>
+                <a href="#menu">Menu</a>
+                <a href="#reserve">Reservations</a>
+                <a href="/api/">API</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div>
+                    <h1>Little Lemon</h1>
+                    <p class="subtitle">Chicago</p>
+                    <p>We are a family owned Mediterranean restaurant, focused on traditional
+                        recipes served with a modern twist.</p>
+                    <a href="#reserve" class="button">Reserve a table</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="container section">
+            <h2>Our Menu</h2>
+            <p class="muted">Loaded live from <code>/api/menu-items/</code>.</p>
+            <ul id="menu-list" class="menu-list">
+                <li class="muted">Loading menu&hellip;</li>
+            </ul>
+        </section>
+
+        <section id="reserve" class="container section">
+            <h2>Reservations</h2>
+            <p>Table bookings are made through the authenticated booking API at
+                <code>/api/bookings/</code>. Register at <code>/auth/users/</code>, log in at
+                <code>/auth/token/login/</code>, then send the header
+                <code>Authorization: Token &lt;your token&gt;</code>.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Little Lemon Restaurant, Chicago</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

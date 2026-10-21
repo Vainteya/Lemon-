@@ -1,0 +1,146 @@
+:root {
+    --green: #495E57;
+    --yellow: #F4CE14;
+    --peach: #EE9972;
+    --light: #EDEFEE;
+    --dark: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Karla", "Segoe UI", Arial, sans-serif;
+    color: var(--dark);
+    background: #ffffff;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid var(--light);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--green);
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 16px;
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--green);
+}
+
+.hero {
+    background: var(--green);
+    color: #ffffff;
+    padding: 48px 0;
+}
+
+.hero h1 {
+    margin: 0;
+    font-family: "Markazi Text", Georgia, serif;
+    font-size: 3.5rem;
+    color: var(--yellow);
+}
+
+.hero .subtitle {
+    margin: 0 0 16px;
+    font-size: 2rem;
+    font-family: "Markazi Text", Georgia, serif;
+}
+
+.hero p {
+    max-width: 480px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    background: var(--yellow);
+    color: var(--dark);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: var(--peach);
+}
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section h2 {
+    color: var(--green);
+    margin-top: 0;
+}
+
+.muted {
+    color: #6b6b6b;
+}
+
+code {
+    background: var(--light);
+    padding: 1px 6px;
+    border-radius: 4px;
+    word-break: break-all;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--light);
+}
+
+.menu-list .price {
+    color: var(--peach);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.site-footer {
+    background: var(--light);
+    padding: 16px 0;
+    margin-top: 24px;
+}
